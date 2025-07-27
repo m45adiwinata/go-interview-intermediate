@@ -16,3 +16,17 @@
 ## ⚙️ Installation
 
 Zero setup! No external packages needed. You can even use Vim to handicap yourself from IDE autocompletes and showing your familiarity with CLI.
+
+---
+
+## 🎯 Goals and Expectations
+
+⏲️ Time Limit: 30 minutes
+💯 Correct use of maps, slices, loops
+🗣️ Narrate your thinking
+⚠️ Internet allowed but no copy-pasting!
+
+---
+
+<h1 align="center">Good luck!</h1>
+<div class="tenor-gif-embed" data-postid="17905179" data-share-method="host" data-aspect-ratio="0.90625" data-width="100%"><a href="https://tenor.com/view/cristiano-ronaldo-drinking-wink-smile-gif-17905179">Cristiano Ronaldo Drinking GIF</a>from <a href="https://tenor.com/search/cristiano+ronaldo-gifs">Cristiano Ronaldo GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
