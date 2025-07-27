@@ -29,4 +29,3 @@ Zero setup! No external packages needed. You can even use Vim to handicap yourse
 ---
 
 <h1 align="center">Good luck!</h1>
-![Tenor GIF](https://media1.tenor.com/m/NF6ixwAmrTMAAAAd/cristiano-ronaldo-drinking.gif)
