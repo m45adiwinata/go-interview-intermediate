@@ -5,5 +5,15 @@
             <img height="250" alt="Fiber" src="https://w3schoolsua.github.io/svg/golang03.svg">
         </picture>
     </a>
-    
 </h1>
+<p align="center">
+    <em>Go interview technical test level intermediate. Focussing on <b>core data structure,
+    clear logical thinking, isn't just syntax grinding</b> 😬</em>
+</p>
+
+---
+
+## ⚙️ Installation
+
+Zero setup! No external packages needed. You can even use Vim to show your familiarity
+with CLI.
