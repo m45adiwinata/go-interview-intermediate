@@ -2,44 +2,51 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"time"
 )
 
+func sumRow(row []int) int {
+	time.Sleep(1 * time.Second)
+	var sum int
+	for _, value := range row {
+		if value != 1 {
+			sum += value
+		}
+	}
+	return sum
+}
+
+func oddEven(n int) string {
+	if n%2 == 0 {
+		return "gn"
+	}
+	return "gj"
+}
+
+func generate(numRows int) [][]int {
+	var res = make([][]int, numRows)
+	for i := 0; i < numRows; i++ {
+		res[i] = make([]int, i+1)
+		res[i][0], res[i][i] = 1, 1
+		for j := 1; j < i; j++ {
+			res[i][j] = res[i-1][j] + res[i-1][j-1]
+		}
+	}
+	return res
+}
+
 func main() {
-	n := 30
-	int_list := generate_list(n)
-	fmt.Println(int_list)
-
-	// kelompokkan tiap bilangan yang sama, contoh:
-	// int_list:
-	// [1 3 2 2 5 1 4 4 4 5 3 5 5 4 0 4 4 4 2 4 2 4 4 2 1 5 2 0 3 4]
-	// grouped:
-	// [
-	//         [1 1 1],
-	//         [3 3 3],
-	//         [2 2 2 2 2 2],
-	//         [5 5 5 5 5],
-	//         [4 4 4 4 4 4 4 4 4 4 4],
-	//         [0 0],
-	// ]
-	grouped := [][]int{}
-
-	print_grouped(grouped)
-}
-
-func generate_list(n int) []int {
-	int_list := make([]int, n)
-	for i := range n {
-		x := rand.Intn(6)
-		int_list[i] = x
+	pascal := generate(15)
+	for _, a := range pascal {
+		for _, b := range a {
+			if b != 1 {
+				fmt.Printf("%d%s", b, oddEven(b))
+			} else {
+				fmt.Print(b)
+			}
+			fmt.Print(" ")
+		}
+		fmt.Printf(" == %d", sumRow(a))
+		fmt.Println("")
 	}
-	return int_list
-}
-
-func print_grouped(grouped [][]int) {
-	fmt.Println("[")
-	for _, g := range grouped {
-		fmt.Printf("\t%v,\n", g)
-	}
-	fmt.Println("]")
 }
