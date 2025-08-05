@@ -36,6 +36,10 @@ func generate(numRows int) [][]int {
 }
 
 func main() {
+	start := time.Now()
+	defer func() {
+		fmt.Printf("Execution time: %s\n", time.Since(start))
+	}()
 	pascal := generate(15)
 	for _, a := range pascal {
 		for _, b := range a {
